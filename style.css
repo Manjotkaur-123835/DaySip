@@ -1,1 +1,335 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    font-family: "Poppins", sans-serif;
+    background: #fff8fb;
+    color: #40363b;
+    padding-bottom: 30px;
+}
+
+
+/* Header */
+
+header {
+    text-align: center;
+    padding: 35px 20px;
+    background: #f8dce7;
+    border-radius: 0 0 30px 30px;
+}
+
+header h1 {
+    font-size: 34px;
+    color: #5b4050;
+}
+
+header p {
+    margin-top: 6px;
+    color: #806875;
+}
+
+
+/* Main */
+
+main {
+    width: 92%;
+    max-width: 850px;
+    margin: 25px auto;
+}
+
+
+/* Welcome */
+
+.welcome {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.welcome h2 {
+    color: #5b4050;
+    font-size: 25px;
+}
+
+.welcome p {
+    color: #80747a;
+    margin-top: 5px;
+}
+
+
+/* Boxes */
+
+.box {
+    background: white;
+    padding: 22px;
+    margin-bottom: 20px;
+    border-radius: 22px;
+    box-shadow: 0 5px 20px rgba(100, 70, 80, 0.08);
+}
+
+.box h2 {
+    color: #5b4050;
+    margin-bottom: 8px;
+}
+
+.small-text {
+    color: #8b7d83;
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+
+/* Inputs */
+
+input {
+    font-family: inherit;
+    border: 1px solid #eadde3;
+    border-radius: 12px;
+    padding: 12px;
+    background: #fff;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #d995aa;
+}
+
+
+/* Buttons */
+
+button {
+    font-family: inherit;
+    border: none;
+    border-radius: 12px;
+    padding: 11px 17px;
+    background: #d995aa;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+
+/* Fixed expenses */
+
+.expense-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    margin-bottom: 12px;
+    background: #fff8fb;
+    border-radius: 16px;
+}
+
+.expense-box h3 {
+    font-size: 15px;
+    color: #5b4050;
+}
+
+.expense-box p {
+    font-size: 12px;
+    color: #8b7d83;
+    margin-top: 3px;
+}
+
+.expense-box input {
+    width: 110px;
+}
+
+
+/* Calendar */
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 7px;
+}
+
+.day-name {
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    color: #927582;
+    padding: 5px 0;
+}
+
+.empty-day {
+    min-height: 50px;
+}
+
+.calendar-day {
+    min-height: 55px;
+    padding: 5px;
+    background: #fff4f7;
+    color: #5b4050;
+    border: 1px solid #f0dfe5;
+    font-size: 14px;
+}
+
+.calendar-day:hover {
+    background: #f8dce7;
+}
+
+
+/* Daily expenses */
+
+.daily-expense {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 16px;
+    margin-bottom: 12px;
+    background: #fff8fb;
+    border-radius: 17px;
+    border: 1px solid #f1e3e8;
+}
+
+.daily-expense h3 {
+    font-size: 15px;
+    color: #5b4050;
+}
+
+.daily-expense p {
+    font-size: 11px;
+    color: #8b7d83;
+    margin-top: 3px;
+}
+
+.daily-input {
+    width: 100px;
+}
+
+
+/* Today's total */
+
+.today-total {
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    background: #f2e7fa;
+    border-radius: 18px;
+}
+
+.today-total p {
+    color: #806b87;
+}
+
+.today-total h2 {
+    margin-top: 5px;
+    color: #684875;
+}
+
+
+/* Monthly summary */
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 4px;
+    border-bottom: 1px solid #f0e5e9;
+    font-size: 14px;
+}
+
+.summary-row strong {
+    color: #684875;
+}
+
+.total-row {
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/* Pie chart */
+
+#pieChart {
+    width: 240px;
+    height: 240px;
+    margin: 25px auto;
+    border-radius: 50%;
+    background: #f3e8ec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8b7d83;
+    text-align: center;
+    padding: 30px;
+}
+
+#chartLegend {
+    margin-top: 10px;
+}
+
+.legend-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 0;
+    font-size: 12px;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    color: #a28f97;
+    font-size: 12px;
+    line-height: 1.8;
+    margin-top: 30px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    main {
+        width: 94%;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .box {
+        padding: 18px;
+    }
+
+    .expense-box,
+    .daily-expense {
+        align-items: center;
+    }
+
+    .expense-box input,
+    .daily-input {
+        width: 90px;
+    }
+
+    .calendar {
+        gap: 4px;
+    }
+
+    .calendar-day {
+        min-height: 45px;
+        font-size: 12px;
+    }
+
+    .day-name {
+        font-size: 9px;
+    }
+
+    #pieChart {
+        width: 210px;
+        height: 210px;
+    }
+  }
