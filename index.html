@@ -1,1 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DaySip ☕</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- Website Header -->
+
+    <header>
+
+        <h1>☕ DaySip</h1>
+
+        <p>Track today. Understand your month.</p>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- Month and Budget -->
+
+        <section class="welcome">
+
+            <h2>September 2026 🌷</h2>
+
+            <p>Let's keep your spending organized.</p>
+
+        </section>
+
+
+        <section class="box">
+
+            <h2>💰 Monthly Budget</h2>
+
+            <input
+                type="number"
+                id="budgetInput"
+                placeholder="Enter your monthly budget"
+            >
+
+            <button id="saveBudget">
+                Save Budget
+            </button>
+
+            <p id="budgetMessage"></p>
+
+        </section>
+
+
+        <!-- Fixed Monthly Expenses -->
+
+        <section class="box">
+
+            <h2>🏠 Fixed Monthly Expenses</h2>
+
+            <p class="small-text">
+                These expenses are added once for the whole month.
+            </p>
+
+
+            <div class="expense-box">
+
+                <div>
+
+                    <h3>🏠 PG Rent</h3>
+
+                    <p>Monthly fixed rent</p>
+
+                </div>
+
+
+                <div>
+
+                    <input
+                        type="number"
+                        id="rentInput"
+                        placeholder="₹0"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="expense-box">
+
+                <div>
+
+                    <h3>📱 Mobile / Internet</h3>
+
+                    <p>Fixed monthly payment</p>
+
+                </div>
+
+
+                <div>
+
+                    <input
+                        type="number"
+                        id="mobileInput"
+                        placeholder="₹0"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <button id="saveFixed">
+                Save Fixed Expenses
+            </button>
+
+        </section>
+
+
+        <!-- Monthly Bills -->
+
+        <section class="box">
+
+            <h2>⚡ Monthly Bills</h2>
+
+            <p class="small-text">
+                Add bills when they arrive.
+            </p>
+
+
+            <div class="expense-box">
+
+                <div>
+
+                    <h3>⚡ Electricity</h3>
+
+                    <p>End-of-month electricity bill</p>
+
+                </div>
+
+
+                <div>
+
+                    <input
+                        type="number"
+                        id="electricityInput"
+                        placeholder="₹0"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <button id="saveBills">
+                Save Bills
+            </button>
+
+        </section>
+
+
+        <!-- Calendar -->
+
+        <section class="box">
+
+            <h2>📅 September Calendar</h2>
+
+            <p class="small-text">
+                Tap a day to see your expenses.
+            </p>
+
+
+            <div class="calendar">
+
+                <div class="day-name">Mon</div>
+                <div class="day-name">Tue</div>
+                <div class="day-name">Wed</div>
+                <div class="day-name">Thu</div>
+                <div class="day-name">Fri</div>
+                <div class="day-name">Sat</div>
+                <div class="day-name">Sun</div>
+
+
+                <div class="empty-day"></div>
+
+
+                <button class="calendar-day" data-day="1">
+                    1
+                </button>
+
+                <button class="calendar-day" data-day="2">
+                    2
+                </button>
+
+                <button class="calendar-day" data-day="3">
+                    3
+                </button>
+
+                <button class="calendar-day" data-day="4">
+                    4
+                </button>
+
+                <button class="calendar-day" data-day="5">
+                    5
+                </button>
+
+                <button class="calendar-day" data-day="6">
+                    6
+                </button>
+
+                <button class="calendar-day" data-day="7">
+                    7
+                </button>
+
+                <button class="calendar-day" data-day="8">
+                    8
+                </button>
+
+                <button class="calendar-day" data-day="9">
+                    9
+                </button>
+
+                <button class="calendar-day" data-day="10">
+                    10
+                </button>
+
+                <button class="calendar-day" data-day="11">
+                    11
+                </button>
+
+                <button class="calendar-day" data-day="12">
+                    12
+                </button>
+
+                <button class="calendar-day" data-day="13">
+                    13
+                </button>
+
+                <button class="calendar-day" data-day="14">
+                    14
+                </button>
+
+                <button class="calendar-day" data-day="15">
+                    15
+                </button>
+
+                <button class="calendar-day" data-day="16">
+                    16
+                </button>
+
+                <button class="calendar-day" data-day="17">
+                    17
+                </button>
+
+                <button class="calendar-day" data-day="18">
+                    18
+                </button>
+
+                <button class="calendar-day" data-day="19">
+                    19
+                </button>
+
+                <button class="calendar-day" data-day="20">
+                    20
+                </button>
+
+                <button class="calendar-day" data-day="21">
+                    21
+                </button>
+
+                <button class="calendar-day" data-day="22">
+                    22
+                </button>
+
+                <button class="calendar-day" data-day="23">
+                    23
+                </button>
+
+                <button class="calendar-day" data-day="24">
+                    24
+                </button>
+
+                <button class="calendar-day" data-day="25">
+                    25
+                </button>
+
+                <button class="calendar-day" data-day="26">
+                    26
+                </button>
+
+                <button class="calendar-day" data-day="27">
+                    27
+                </button>
+
+                <button class="calendar-day" data-day="28">
+                    28
+                </button>
+
+                <button class="calendar-day" data-day="29">
+                    29
+                </button>
+
+                <button class="calendar-day" data-day="30">
+                    30
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Selected Day -->
+
+        <section class="box">
+
+            <h2 id="selectedDate">
+                📅 September 1
+            </h2>
+
+            <p class="small-text">
+                Enter what you spent today.
+            </p>
+
+
+            <!-- Food -->
+
+            <div class="daily-expense">
+
+                <div>
+
+                    <h3>🍔 Food & Outside Eating</h3>
+
+                    <p>Restaurants, cafés, food delivery</p>
+
+                </div>
+
+                <input
+                    type="number"
+                    class="daily-input"
+                    data-category="Food"
+                    placeholder="₹0"
+                >
+
+            </div>
+
+
+            <!-- Transport -->
+
+            <div class="daily-expense">
+
+                <div>
+
+                    <h3>🛺 Transport & Outing</h3>
+
+                    <p>Rickshaw, metro, bus, etc.</p>
+
+                </div>
+
+                <input
+                    type="number"
+                    class="daily-input"
+                    data-category="Transport"
+                    placeholder="₹0"
+                >
+
+            </div>
+
+
+            <!-- Hygiene -->
+
+            <div class="daily-expense">
+
+                <div>
+
+                    <h3>🧴 Personal Hygiene</h3>
+
+                    <p>Skincare, toiletries, etc.</p>
+
+                </div>
+
+                <input
+                    type="number"
+                    class="daily-input"
+                    data-category="Hygiene"
+                    placeholder="₹0"
+                >
+
+            </div>
+
+
+            <!-- Clothing -->
+
+            <div class="daily-expense">
+
+                <div>
+
+                    <h3>👗 Clothing & Looks</h3>
+
+                    <p>Clothes, accessories, etc.</p>
+
+                </div>
+
+                <input
+                    type="number"
+                    class="daily-input"
+                    data-category="Clothing"
+                    placeholder="₹0"
+                >
+
+            </div>
+
+
+            <!-- Education -->
+
+            <div class="daily-expense">
+
+                <div>
+
+                    <h3>📚 Education & Stationery</h3>
+
+                    <p>Books, stationery, college needs</p>
+
+                </div>
+
+                <input
+                    type="number"
+                    class="daily-input"
+                    data-category="Education"
+                    placeholder="₹0"
+                >
+
+            </div>
+
+
+            <!-- Groceries -->
+
+            <div class="daily-expense">
+
+                <div>
+
+                    <h3>🛒 Groceries</h3>
+
+                    <p>Blinkit, Zepto, groceries, etc.</p>
+
+                </div>
+
+                <input
+                    type="number"
+                    class="daily-input"
+                    data-category="Groceries"
+                    placeholder="₹0"
+                >
+
+            </div>
+
+
+            <!-- Entertainment -->
+
+            <div class="daily-expense">
+
+                <div>
+
+                    <h3>🎬 Entertainment</h3>
+
+                    <p>Movies, games, fun activities</p>
+
+                </div>
+
+                <input
+                    type="number"
+                    class="daily-input"
+                    data-category="Entertainment"
+                    placeholder="₹0"
+                >
+
+            </div>
+
+
+            <!-- Health -->
+
+            <div class="daily-expense">
+
+                <div>
+
+                    <h3>💊 Health</h3>
+
+                    <p>Medicines and health-related expenses</p>
+
+                </div>
+
+                <input
+                    type="number"
+                    class="daily-input"
+                    data-category="Health"
+                    placeholder="₹0"
+                >
+
+            </div>
+
+
+            <!-- Other -->
+
+            <div class="daily-expense">
+
+                <div>
+
+                    <h3>💸 Other</h3>
+
+                    <p>Anything that doesn't fit above</p>
+
+                </div>
+
+                <input
+                    type="number"
+                    class="daily-input"
+                    data-category="Other"
+                    placeholder="₹0"
+                >
+
+            </div>
+
+
+            <button id="saveDay">
+                Save Today's Expenses
+            </button>
+
+
+            <div class="today-total">
+
+                <p>Today's Total</p>
+
+                <h2 id="todayTotal">
+                    ₹0
+                </h2>
+
+            </div>
+
+        </section>
+
+
+        <!-- Monthly Summary -->
+
+        <section class="box">
+
+            <h2>📊 Monthly Summary</h2>
+
+
+            <div class="summary-row">
+
+                <span>🏠 Fixed Expenses</span>
+
+                <strong id="fixedTotal">
+                    ₹0
+                </strong>
+
+            </div>
+
+
+            <div class="summary-row">
+
+                <span>⚡ Monthly Bills</span>
+
+                <strong id="billsTotal">
+                    ₹0
+                </strong>
+
+            </div>
+
+
+            <div class="summary-row">
+
+                <span>📅 Daily Expenses</span>
+
+                <strong id="dailyTotal">
+                    ₹0
+                </strong>
+
+            </div>
+
+
+            <div class="summary-row total-row">
+
+                <span>💸 Total Spent</span>
+
+                <strong id="monthlyTotal">
+                    ₹0
+                </strong>
+
+            </div>
+
+
+            <div class="summary-row">
+
+                <span>💰 Remaining</span>
+
+                <strong id="remaining">
+                    ₹0
+                </strong>
+
+            </div>
+
+
+            <div class="summary-row">
+
+                <span>🌱 Savings</span>
+
+                <strong id="savings">
+                    ₹0
+                </strong>
+
+            </div>
+
+        </section>
+
+
+        <!-- Pie Chart -->
+
+        <section class="box">
+
+            <h2>🥧 Where Did Your Money Go?</h2>
+
+            <div id="pieChart">
+
+                Your chart will appear here.
+
+            </div>
+
+            <div id="chartLegend"></div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>☕ DaySip</p>
+
+        <p>Made for everyday spending.</p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+                      </html>
